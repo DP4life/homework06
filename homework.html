@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework</title>
+        <link rel="stylesheet" href="homework.css" >
+        <meta charset="UTF-8">
+        <meta name="description" content="SkillUP Homework 6">
+        <meta name="keywords" content="HTML form, HTML meta tag, CSS">
+        <meta name="author" content="Здесь Ваше имя и Фамилия">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <label for="firstname">First name (reqiured)</label>
+            <input type="text" name="firstname" id="firstname">
+
+            <label for="lastname">Last name (reqiured)</label>
+            <input type="text" name="lastname" id="lastname">
+
+            <fieldset>
+                <legend>What's your request</legend>
+
+                <label for="crossover">Crossover</label>
+                <input type="radio" name="request" value="crossover">
+
+                <label for="au">Alternate Universe</label>
+                <input type="radio" name="request" value="au">
+
+                <label for="original">Original Idea</label>
+                <input type="radio" name="request" value="original">
+            </fieldset>
+
+            <label for="fandom">Choose a fandom</label>
+            <select name="fandom" id="fandom">
+                <option value="default">Original Idea</option>
+                <option value="Gotham">Gotham</option>
+                <option value="MCU">Marvel Cinematic Universe</option>
+                <option value="DCU">DC Extnded Universe</option>
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="Naruto">Naruto</option>
+            </select>
+            
+            <textarea name="idea" id="idea">
+                Describe your idea here
+            </textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
